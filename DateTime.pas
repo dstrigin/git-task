@@ -19,3 +19,10 @@ if month2 > month1 then
 else if month1 > month2 then
   println(day1, month1)
 else println($'{max(day1, day2)}/{month1}');
+
+{4}
+var y := ReadInteger;
+Assert(y > 0);
+if ((y mod 4 = 0) and ((y mod 400 = 0) or (y mod 100 <> 0))) then
+  println('366')
+else println('365');
