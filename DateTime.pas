@@ -38,3 +38,8 @@ begin
   else sum += 365;
 end;
 println(sum);
+
+{6}
+var h := readinteger;
+assert(h >= 0);
+println(h*3600);
