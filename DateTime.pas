@@ -9,3 +9,13 @@ else println('False');
 
 {2}
 println(60);
+
+{3}
+var (day1, month1, day2, month2) := ReadInteger4;
+Assert((day1 <= 31) and (day2 <= 31));
+Assert((month1 <= 12) and (month2 <= 12));
+if month2 > month1 then
+  println(day2, month2)
+else if month1 > month2 then
+  println(day1, month1)
+else println($'{max(day1, day2)}/{month1}');
